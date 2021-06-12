@@ -3,21 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>EGM Minecraft - Startseite</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.jpg" sizes="32x32">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.jpg" sizes="96x96">
     <style>
         html {
-	overflow-y: auto;
-	scroll-behavior: smooth;
-}
-body {
-    background-color: #404040;
-    color: #FFFFFF;
-}
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #404040;
+            color: #FFFFFF;
+            text-align: center;
+            margin: 0;
+        }
+
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .Footer {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            display: inline;
+            float: left;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration-line: underline;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
     </style>
 </head>
 
-<body>
-    <nav>
+<body id="Home">
+    <nav class="navigation">
         <ul>
+            <li>
+                <a href="#Home">EGM Minecraft</a>
+            </li>
             <li>
                 <a href="#Minecraft">Was ist Minecraft?</a>
             </li>
@@ -28,7 +85,7 @@ body {
                 <a href="#Citybuild">Citybuild</a>
             </li>
             <li>
-                <a href="https://mc.einfach-gaming.de/cp/home.php">Server Statistik</a>
+                <a href="https://mc.einfach-gaming.de/cp/home.php" target="_blank">Server Statistik</a>
             </li>
         </ul>
     </nav>
@@ -87,7 +144,7 @@ body {
                 den Server haben um ihn zu verbessern, meldet euch beim Team und dieses wird sich dann darum kümmern.
             </p>
         </section>
-        
+
         <section id="Citybuild">
             <p>✦ Citybuild<br>
 
@@ -122,19 +179,22 @@ body {
                 auf die Vorschläge der User eingehen und versuchen nach diesen das Projekt zu gestallten.</p>
         </section>
     </main>
-    <nav><ul>
-        <li>
-            <a href="">Datenschutzerklärung</a>
-        </li>
-        <li>
-            <a href="">Nutzungsbedingungen</a>
-        </li>
-        <li>
-            <a href="">Impressum</a>
-        </li>
-    </ul></nav>
-    <p>Copyright © 2021 Sthamer, Ingo & Pascal GbR<br> Besuche das <a href="einfach-gaming.de">Einfach-Gaming Forum</a> für mehr</p>
-  
+    <nav class="Footer">
+        <ul>
+            <li>
+                <a href="">Datenschutzerklärung</a>
+            </li>
+            <li>
+                <a href="">Nutzungsbedingungen</a>
+            </li>
+            <li>
+                <a href="">Impressum</a>
+            </li>
+        </ul>
+    </nav>
+    <p>Copyright © 2021 Sthamer, Ingo & Pascal GbR<br> Besuche das <a href="einfach-gaming.de">Einfach-Gaming Forum</a>
+        für mehr</p>
+
 </body>
 
 </html>
